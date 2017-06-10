@@ -22,3 +22,29 @@ An apple a day keeps the doctor away.
 
 Answer seven:
 So that she can attend another family funeral and meet the man.
+
+/*
+
+1. Answer: Ask one of the gaurds 'Which door would the other guard say leads to paradise?' If you ask the truthful one he will say the lying guard would say the wrong door. If you ask the lying guard he would say the truthful gaurd would pick the wrong door as well (since he is lying). So no matter what you could choose the door opposite of what they say and end up in paradise.
+
+2. It's him in the painting!
+
+3. Tuesday
+Thursday
+Today
+Tomorrow
+
+4. Carry chicken
+Carry fox, grab chicken on return
+Carry corn, leave chicken
+Carry chicken
+
+5. Answer: 833 figs.
+Step one: First you want to make 3 trips of 1,000 figs 333 nautical miles. You will be left with 2,001 figs and 667 nautical miles to go.
+Step two: Next you want to take 2 trips of 1,000 figs 500 nautical miles. You will be left with 1,000 figs and 167 nautical miles to go (you have to leave a fig behind).
+Step three: Finally, you travel the last 167 nautical miles with one load of 1,000 figs and are left with 833 figs in Capertown.
+
+6. Answer: An apple a day keeps the doctor away.
+
+7. Answer: She killed her sister in hopes that the man would be at the funeral. Some people say this riddle is a test of a psychopath. If you answer it correctly, you could be one.
+*/

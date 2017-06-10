@@ -35,3 +35,16 @@ else if (choice === 'No' || choice === 'no') {
 //   choice = prompt('Please input Yes/yes or No/no.');
 //
 // }
+
+
+/* Solution
+//provided arrays omitted
+
+console.log(
+		"So....your startup is basically like " +
+		thisArray[Math.floor(Math.random() * thisArray.length)] +
+		" for " +
+		thatArray[Math.floor(Math.random() * thatArray.length)] +
+		"?"
+	);
+*/
