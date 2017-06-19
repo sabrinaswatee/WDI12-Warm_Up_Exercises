@@ -62,6 +62,7 @@ var bigArray = [
 ["A","A","A","A","A"],
 ["A","X","A","A","A"]
 ];
+
 treasureFinder (bigArray);
 
 /*
