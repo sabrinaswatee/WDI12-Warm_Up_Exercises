@@ -27,6 +27,7 @@ Words that start with a consonant start with lower case
 Consonants after the first letter alternate upper and lower case,
 except the alternation starts over with lowercase after a digit (ex: sCh00l)
 =end
+require 'pry'
 
 loop do
   print "Chat with Danny: "
@@ -42,27 +43,23 @@ loop do
   elsif my_chat.split(' ').first == 'Bro,' || my_chat.split(' ').first == 'bro,'
     coded_chat = []
     counter = 1
-    my_chat.split('').each_with_index do |element, index|
-      if my_chat[index + 5] == 'a'
-        coded_chat.push('4')
-      elsif my_chat[index + 5] == 'e'
-        coded_chat.push('3')
-      elsif my_chat[index + 5] == 'i'
-        coded_chat.push('1')
-      elsif my_chat[index + 5] == 'o'
-        coded_chat.push('0')
-      elsif my_chat[index + 5].scan(/[aeiou]/) == []
-        if my_chat[index + 5] == my_chat[index + 5].upcase && counter % 2 == 0
-          coded_chat.push(my_chat[index + 5].downcase)
-        else
-          coded_chat.push(my_chat[index + 5].upcase)
-        end
-      else
-        coded_chat.push(my_chat[index + 5])
-        counter += 1
-      end
-    end
-    puts coded_chat.join('').capitalize
+    my_chat.gsub!("a", "4")
+    my_chat.gsub!("e", "3")
+    my_chat.gsub!("i", "1")
+    my_chat.gsub!("o", "0")
+    # my_chat.split('').each_index do |index|
+    #   if my_chat[index + 5].scan(/[aeiou]/) == []
+    #   #   if my_chat[index + 5] == my_chat[index + 5].upcase && counter % 2 == 0
+    #   #     coded_chat.push(my_chat[index + 5].downcase)
+    #   #   else
+    #   #     coded_chat.push(my_chat[index + 5].upcase)
+    #   #   end
+    #   # else
+    #     coded_chat.push(my_chat[index + 5])
+    #     counter += 1
+    #   end
+    # end
+    puts my_chat.split(' ').slice(0, my_chat.length - 1).join(' ').capitalize
   else
     puts "Whatever."
   end
