@@ -32,6 +32,7 @@ require 'pry'
 loop do
   print "Chat with Danny: "
   my_chat = gets.chomp
+  puts my_chat
   if my_chat.split('').last == '?'
     puts "Sure."
   elsif my_chat == my_chat.upcase
@@ -41,25 +42,29 @@ loop do
   elsif my_chat == 'bye'
     break
   elsif my_chat.split(' ').first == 'Bro,' || my_chat.split(' ').first == 'bro,'
-    coded_chat = []
     counter = 1
+    my_chat.split('').each_index do |index|
+      # print "#{my_chat} \n"
+      # print "#{my_chat[index + 5]} \n"
+      if my_chat[index + 5].scan(/[aeiou ]/) == []
+        print "#{my_chat[index + 5]} \n"
+        my_chat[index + 5] = my_chat[index + 5].upcase
+      #   if my_chat[index + 5] == my_chat[index + 5].upcase && counter % 2 == 0
+      #     my_chat[index + 5] = my_chat[index + 5].downcase
+      #     counter += 1
+      #   else
+      #     my_chat[index + 5] = my_chat[index + 5].upcase
+      #     counter += 1
+      #   end
+      # else
+      #   my_chat[index + 5] = my_chat[index + 5]
+      end
+    end
     my_chat.gsub!("a", "4")
     my_chat.gsub!("e", "3")
     my_chat.gsub!("i", "1")
     my_chat.gsub!("o", "0")
-    # my_chat.split('').each_index do |index|
-    #   if my_chat[index + 5].scan(/[aeiou]/) == []
-    #   #   if my_chat[index + 5] == my_chat[index + 5].upcase && counter % 2 == 0
-    #   #     coded_chat.push(my_chat[index + 5].downcase)
-    #   #   else
-    #   #     coded_chat.push(my_chat[index + 5].upcase)
-    #   #   end
-    #   # else
-    #     coded_chat.push(my_chat[index + 5])
-    #     counter += 1
-    #   end
-    # end
-    puts my_chat.split(' ').slice(0, my_chat.length - 1).join(' ').capitalize
+    puts my_chat.split(' ').slice(1, my_chat.length - 1).join(' ').capitalize
   else
     puts "Whatever."
   end
