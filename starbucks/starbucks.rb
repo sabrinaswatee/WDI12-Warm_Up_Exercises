@@ -72,7 +72,7 @@ while selection == 'y'
 
   coffee_name = []
   coffee_name = Coffee.new(input_type, input_sugar, input_size, input_name)
-  @order_list.store coffee_name
+  Order.store coffee_name
 
   print "Would you like to place another order? (y/n): "
   selection = gets.chomp
