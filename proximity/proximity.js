@@ -27,8 +27,7 @@ var myResults = [
   {name: "running shoes", location: {lat: 37.7669, long: -122.457}},
   {name: "paint brushes", location: {lat: 37.76800, long: -122.4580}}];
 
-// var currentLocation = prompt ('input latitute and longtidue: ');
-var currentLocation = "37.751245, 121.45";
+var currentLocation = prompt ('input latitute and longtidue: ');
 var currentLat = Math.abs (currentLocation.split(',')[0]);
 var currentLong = Math.abs (currentLocation.split(',')[1]);
 var distances = [];
