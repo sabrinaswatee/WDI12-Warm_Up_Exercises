@@ -9,7 +9,9 @@ Extension
 Starbucks always gets names wrong, however. Make the name a bad misspelling of the actual name when you create the order.
 puts c1
 # => "Barrel's latte, medium, 2 sugars."
-When you make a new order, you have to wait for coffee. When you create the new order, there should be a waiting time of anywhere between 2-5 minutes. You should be able to check if it's ready by calling c1.ready? and have the program yell out the order and the misspelled name.
+When you make a new order, you have to wait for coffee. When you create the new order,
+there should be a waiting time of anywhere between 2-5 minutes.
+You should be able to check if it's ready by calling c1.ready? and have the program yell out the order and the misspelled name.
 You should be able to mark the coffee as collected with c1.collected = true.
 List all of the coffees not collected.
 Add options to the coffee order, eg shot of hazelnut, whipped cream, chocolate syrup.
@@ -20,21 +22,7 @@ Now do it with js.
 
 require 'pry'
 
-# @@order_list = []
 counter = 1
-
-class Order
-
-  def initialize
-    @order_list = []
-  end
-
-  def store (order)
-    @order_list.push order
-  end
-end
-
-Order.new
 
 class Coffee
 
@@ -53,6 +41,8 @@ class Coffee
 
 end
 
+order_list = []
+
 puts "Welcome to Starbucks Self-order App"
 print "Would you like to place an order? (y/n): "
 selection = gets.chomp
@@ -67,12 +57,12 @@ while selection == 'y'
   print "Name of customer: "
   input_name = gets.chomp
 
-  coffee_name = 'c' + counter.to_s;
-  counter += 1
-
-  coffee_name = []
-  coffee_name = Coffee.new(input_type, input_sugar, input_size, input_name)
-  Order.store coffee_name
+  # coffee_name = 'c' + counter.to_s;
+  # counter += 1
+  #
+  # coffee_name = []
+  c1 = Coffee.new(input_type, input_sugar, input_size, input_name)
+  order_list.push(c1)
 
   print "Would you like to place another order? (y/n): "
   selection = gets.chomp

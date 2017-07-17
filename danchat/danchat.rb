@@ -60,10 +60,9 @@ loop do
       #   my_chat[index + 5] = my_chat[index + 5]
       end
     end
-    my_chat.gsub!("a", "4")
-    my_chat.gsub!("e", "3")
-    my_chat.gsub!("i", "1")
-    my_chat.gsub!("o", "0")
+    my_chat.gsub(/[aeio]/, 'a' => 4, 'e' => 3, 'i' => 1, 'o' => 0)
+    if counter % 2 == 0
+
     puts my_chat.split(' ').slice(1, my_chat.length - 1).join(' ').capitalize
   else
     puts "Whatever."
