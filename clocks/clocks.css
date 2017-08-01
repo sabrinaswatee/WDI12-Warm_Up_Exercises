@@ -1,0 +1,31 @@
+#clock {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 20px auto 0 auto;
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/fc/66/21/fc6621843d14511d39c98857d9412be0.jpg');
+  background-repeat: no-repeat;
+}
+
+#sec, #min, #hour {
+  position: absolute;
+  width: 90px;
+  height: 600px;
+  top: 0px;
+  left: 285px;
+}
+
+#sec {
+  background: url('http://www.paulrhayes.com/experiments/clock/images/secondHand.png');
+  z-index: 3;
+}
+
+#min {
+  background: url('http://dash.teslatime.com/assets/minuteHand-0d7481cb5f8bddcf1b5cccc888f4c143.png');
+  z-index: 2;
+}
+
+#hour {
+  background: url('http://dash.teslatime.com/assets/hourHand-427ca34081a82726e1b651aa8f779131.png');
+  z-index: 1;
+}

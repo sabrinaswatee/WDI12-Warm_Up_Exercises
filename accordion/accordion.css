@@ -1,0 +1,12 @@
+#menu {
+  border-right: 70px solid #23234e;
+  border-left: 70px solid #23234e;
+  border-top: 40px solid #23234e;
+  border-bottom: 40px solid #23234e;
+  width:300px;
+  padding: 10px;
+}
+
+#languages {
+  list-style: none;
+}
