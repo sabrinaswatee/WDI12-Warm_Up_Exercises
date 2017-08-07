@@ -43,7 +43,7 @@ var word_balance = function (word) {
       left_value += (i - j) * (letter_value.indexOf(left_array[j])+1);
     }
 
-    var right_array = word_array.slice(i+1, word_array.length+1);
+    var right_array = word_array.slice(i+1, word_array.length);
     var right_value = 0;
     for (var k = 0; k < right_array.length; k++) {
       right_value += (k + 1) * (letter_value.indexOf(right_array[k])+1);
