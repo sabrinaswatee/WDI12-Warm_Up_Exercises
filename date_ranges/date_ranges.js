@@ -13,7 +13,7 @@ Examples:
 makeFriendlyDates(["2016-07-01", "2016-07-04"]) should return ["July 1st","4th"]
 makeFriendlyDates(["2016-07-01", "2018-07-04"]) should return ["July 1st, 2016", "July 4th, 2018"].
 */
-// var dateArray = process.argv[2] + process.argv[3];
+
 
 var dateArray1 = ["2016-07-01", "2016-07-04"];
 var dateArray2 = ["2016-07-01", "2018-07-04"];
