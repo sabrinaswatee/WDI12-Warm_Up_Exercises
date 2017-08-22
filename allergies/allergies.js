@@ -21,7 +21,7 @@ class Allergies {
     return this.contain;
   };
 
-  allergicTo(item) {
+  allergic_to(item) {
     return (this.contain.includes(item)) ? true : false;
   };
 
@@ -30,4 +30,4 @@ class Allergies {
 var allergies = new Allergies(34);
 console.log(allergies);
 console.log(allergies.list);
-console.log(allergies.allergicTo('eggs'));
+console.log(allergies.allergic_to('eggs'));
